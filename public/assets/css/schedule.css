@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 3, 2017, 9:05:31 AM
+    Author     : PhiNT
+*/
+
+body{
+    background: 
+        /* top, transparent color, faked with gradient */ 
+        linear-gradient(
+        rgba(255, 255, 255, 0.9), 
+        rgba(255, 255, 255, 0.9)
+        ),
+        /* bottom, image */
+        url(../img/background/schedule.jpg);
+    background-position: bottom right; 
+    background-repeat: repeat;
+    //background-size: cover;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+}
+
+body>.container{
+    padding: 30px;
+}
+
+body>.container>h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
+h1, h2, h3, h4, h5, h6{    
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, メイリオ, Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif !important;
+}
+
+table{
+    width: 100%;
+    margin-top: 30px;
+    min-height: 233px;
+}
+
+th, td{
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+table>tbody>tr>td>p{
+    margin-bottom: 5px;
+}
+
+table>tbody>tr.warning>th{
+    background-color: rgba(243, 156, 18, 0.7) !important;
+    border-color: #ffffff !important;
+    border: 1px #ffffff solid;
+}
+
+table>tbody>tr.active>td{
+    background-color: rgba(236, 240, 241, 0.7) !important;
+    border-color: #ffffff !important;
+    border: 1px #ffffff solid;
+}
+
+table>tbody>tr.active>th{
+    background-color: rgba(189, 195, 199, 0.7) !important;
+    border-color: #ffffff !important;
+    border: 1px #ffffff solid;
+}
+.row.form{
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.nodata{
+    width: 100%;
+    text-align: center;
+    height: 283px;
+    background-color: rgba(189, 195, 199, 0.7);
+    font-size: 50px;
+    padding: 115px 0px;
+    border: 1px #ffffff solid;
+}
+
+.reg{
+    cursor:pointer;
+    transition: all 0.3s;
+}
+
+.reg:hover {    
+    background-color: rgba(189, 195, 199, 0.7) !important;
+}
+
+.modal-title{
+    font-weight: bolder;
+}
+
+.modal-body>.row>.col-md-4{
+    font-weight: bolder;
+}
+
+.modal-body>.row>.col-md-4>span{
+    font-weight: initial;
+}
+
+@media screen and (min-width: 991px){
+    .modal-dialog {
+        right: auto;
+        left: 50%;
+        width: 800px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.btn-custom{    
+    position: absolute;
+    bottom: -54px;
+    right: 20px;
+    z-index: 1050;
+}
+
+.modal-footer{
+    margin-top: 0px;
+}
+
+.modal-body .row.form{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.modal-body .form-group{
+    margin-bottom: 0px;
+}
+
+@media (max-width: 991px){
+    .modal-body input{
+        margin-bottom: 10px;
+    }
+    
+    .btn-custom{
+        bottom: -64px;
+    }
+}
